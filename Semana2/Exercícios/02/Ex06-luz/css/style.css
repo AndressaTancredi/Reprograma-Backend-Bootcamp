@@ -1,0 +1,50 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+	background-color: #462755;
+}
+
+h1{
+    color:#fff;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.btn{ 
+    background-color: #ECDDF3;
+    color: #000000;
+    border-radius: 50px;
+    border: 0;
+    padding: 10px 20px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top:50px;
+}
+
+.lampada{
+    width: 30%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.apagada{
+    display: none;
+}
+
+.acesa{
+    display: block;
+}

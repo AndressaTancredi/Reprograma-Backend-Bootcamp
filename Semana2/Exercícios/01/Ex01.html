@@ -1,0 +1,28 @@
+<!-- Elabore um programa que leia um número e calcule os seus 
+vizinhos (anterior e posterior)  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercicio 01</h1>
+    <script>
+        // Isso é um comentário de uma linha em JS
+        /* Isso também é um comentário,
+        só que de várias
+        linhas*/
+        var numero = Number(prompt('Digite um número:'))
+        console.log(typeof numero)
+        console.log('O número digitado pelo usuário é '+ numero)
+        var anterior = numero - 1;
+        var posterior = numero + 1;
+        console.log('Os vizinhos do número '+ numero + ' são '+ anterior +' e '+ posterior)
+
+        console.log('Os vizinhos do número ',numero,' são ', anterior ,' e ', posterior)
+    </script>
+</body>
+</html>
