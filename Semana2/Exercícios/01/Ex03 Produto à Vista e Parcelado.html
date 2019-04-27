@@ -11,7 +11,16 @@ Exemplo de saída:
 <script>
     var valorProduto = 60;
     console.log('Preço: R$ ' + valorProduto.toFixed(2));
-    console.log('À vista: R$ ' + valorProduto*0.90);
+    console.log('À vista: R$ ' + valorProduto*0.1);
     console.log('À vista: R$ ', (valorProduto - (valorProduto*10/100)).toFixed(2));
     console.log('Ou 3x de: R$ ', (valorProduto/3).toFixed(2));
 </script>
+
+<!-- Outra versão:
+let produto = Number(prompt("Qual o valor do produto?")).toFixed(2)
+let aVista = (produto - (produto * 0.1)).toFixed(2)
+let parcelado = (produto / 3).toFixed(2)
+
+console.log("Valor do produto: R$" + produto)
+console.log("O valor à vista é de: R$" + aVista)
+console.log("O valor do parcelamento em 3x é de: R$" + parcelado) -->

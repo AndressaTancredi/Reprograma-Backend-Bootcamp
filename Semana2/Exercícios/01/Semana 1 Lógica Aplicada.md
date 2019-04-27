@@ -1,6 +1,5 @@
 Aula 01 | Lógica aplicada + JavaScript
 
-
 - Configurando seu usuario (nome): `git config --global user.name`
 - Configurando seu usuario (email):`git config --global user.email`
 - Clonando repositório: `git clone [url do repositório no git]`
@@ -11,9 +10,3 @@ Aula 01 | Lógica aplicada + JavaScript
 - Comitando: `git commit -m "Mensagem"`
 - Subindo alterações: `git push origin master`
 
-## Entendendo o papel do JS:
-Desabilitando o JS da página: chrome://settings/content (no Chrome)
-
-
-## Variáveis
-Declaração  `var nomedavariavel`

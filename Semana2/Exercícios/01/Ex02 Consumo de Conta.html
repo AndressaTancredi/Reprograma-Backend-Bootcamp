@@ -1,13 +1,11 @@
 <!-- Crie um algoritmo que receba:
 a) O valor da conta (consumo)
 b) O número de clientes 
-
 Depois disso  calcule e mostre no console:
 a) O valor dos 10% (cota do garçom)
 b) O valor final da conta (consumo + 10%)
 c) O valor que cada cliente deve pagar -->
 
-<meta charset="UTF-8">
 <script>
     var valorConta = Number(prompt('Digite o valor da conta'));
     var numeroPessoas  = prompt('Digite o valor da conta');
@@ -15,8 +13,18 @@ c) O valor que cada cliente deve pagar -->
     var cotaGarcon = valorConta*10/100;
     console.log('O valor dos 10% é '+ cotaGarcon);
     console.log('O valor final da conta é', valorConta+cotaGarcon)
-    var valorPorPessoa = ((valorConta+ cotaGarcon)/numeroPessoas).toFixed(2)
+    var valorPorPessoa = ((valorConta+ cotaGarcon)/numeroPessoas).toFixed(2) // to fixed indicando quantas casas decimais quero mostrar.
     console.log('O valor que cada cliente deve pagar ', valorPorPessoa);
 </script>
 
+<!-- Outra versão:
+let consumo = Number(prompt("Qual o valor da conta?"))
+let clientes = Number(prompt("Qual o numero de clientes?"))
 
+let cotaDoGarcon = consumo * 0.1
+let contaFinal = consumo+cotaDoGarcon
+let valorCliente = contaFinal / clientes
+
+console.log("Os 10% do garçon é: " + cotaDoGarcon)
+console.log("O valor final da conta é: " + contaFinal)
+console.log("O valor que cada cliente deve pagar é de: " + valorCliente) -->

@@ -6,7 +6,10 @@
     font-size: 20px;
 }
 .card-img{
-    height: 900px;
+    height: 1000px;
+    width: 1000;
+    float: left;
+    clear: both;
 }
 .card-titleTOP {
     color: black;
@@ -14,9 +17,16 @@
     position: relative;
     top: 100px;
 }
+.row1 {
+    float: left;
+}
+.row2 {
+    float: left;
+    clear: both;
+}
 .card {
     font-size: 20px; 
-    margin: 20px 20px 20px 20px;
+    margin: 30px 30px 30px 30px;
     float: left;
     clear: none;
 } 
@@ -35,11 +45,10 @@
 }
 footer {
     float: left;
-    clear: both;  
-    position: relative;
-    bottom: 0;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    height: 30px;
     width: 100%;
-    height: 2rem;  
     color: black;
     background-color: rgb(230, 236, 236);
 }
