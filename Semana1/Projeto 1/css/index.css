@@ -1,19 +1,8 @@
-/* .bg-red {
-    background-color: red;
-}
-
-.bg-blue {
-    background-color: blue;
-}
-
-.container-meu {
-    max-width: 1140px;
-    margin: 0 auto;
-} */
 .row{
+    text-align: justify;
     border-radius: 20px;
-    
-    
+    width: 2400px;
+    padding: 20px;
 }
 .navbar-brand {
     font-size: 25px;
@@ -51,13 +40,12 @@ p {
     width: 585px;
     padding: 10px; 
     float: left;
-    margin: 55px;
     align-items: center;
 }
 .card-deck{
     float: right;
     padding: 20px;
-    margin: 30px;
+    margin: 10px;
 }
 .blockquote-footer {
     text-align: center;
