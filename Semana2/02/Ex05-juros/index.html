@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>{Reprograma} - Cálculo de Juros Simples</title>
+	<title>Cálculo de Juros Simples</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -15,55 +15,29 @@
 
 	<header>
 		<div class="container">
-			<!-- <h1>{reprograma}</h1> -->
-			<img src="./img/logo_reprograma.png" />
 		</div>
 	</header>
 	<main>
 		<section class="container">
-			<h2>Juros</h2>
+			<h2>Juros Simples</h2>
 			<table>
 				<thead>
 					<tr>
 						<th>Dinheiro</th>
 						<th>Taxa de Juros</th>
 						<th>Tempo</th>
-						<th>Resultado</th>
+						<th>Juros Total</th>
+						<th>Montante Final</th>
 					</tr>
 				</thead>
 				<tbody id="tabela-juros">
-
 					<tr class="juros">
-						<td class="info-dinheiro">1000</td>
-						<td class="info-taxa">0.03</td>
-						<td class="info-tempo">12</td>
-						<td class="info-resultado">0</td>
+						<td class="info-dinheiro">Valor Aplicado</td>
+						<td class="info-taxa">Taxa Mensal</td>
+						<td class="info-tempo">Tempo em Meses</td>
+						<td class="info-juros">Juros de Todo o Período</td>
+						<td class="info-montante">Juros Total + Valor Aplicado</td>
 					</tr>
-					<tr class="juros">
-						<td class="info-dinheiro">1000</td>
-						<td class="info-taxa">0.03</td>
-						<td class="info-tempo">12</td>
-						<td class="info-resultado">0</td>
-					</tr>
-					<tr class="juros">
-						<td class="info-dinheiro">1000</td>
-						<td class="info-taxa">0.03</td>
-						<td class="info-tempo">12</td>
-						<td class="info-resultado">0</td>
-					</tr>
-					<tr class="juros">
-						<td class="info-dinheiro">1000</td>
-						<td class="info-taxa">0.03</td>
-						<td class="info-tempo">12</td>
-						<td class="info-resultado">0</td>
-					</tr>
-					<tr class="juros">
-						<td class="info-dinheiro">1000</td>
-						<td class="info-taxa">0.03</td>
-						<td class="info-tempo">12</td>
-						<td class="info-resultado">0</td>
-					</tr>
-
 				</tbody>
 			</table>
 
@@ -73,16 +47,16 @@
 			<h2 id="titulo-form">Cálculo de Juros</h2>
 			<form id="form-adiciona">
 				<div class="grupo">
-					<label for="dinheiro">Money ($):</label>
-					<input id="dinheiro" name="dinheiro" type="text" placeholder="digite a grana" class="campo">
+					<label for="dinheiro">Dinheiro ($):</label>
+					<input id="dinheiro" name="dinheiro" type="text" placeholder="digite o valor" class="campo">
 				</div>
 				<div class="grupo">
 					<label for="taxa">Taxa de Juros:</label>
-					<input id="taxa" name="taxa" type="text" placeholder="e a taxa?" class="campo campo-medio">
+					<input id="taxa" name="taxa" type="text" placeholder="digite a taxa" class="campo campo-medio">
 				</div>
 				<div class="grupo">
-					<label for="tempo">Quanto Tempo?</label>
-					<input id="tempo" name="tempo" type="text" placeholder="mas quanto tempo? em meses" class="campo campo-medio">
+					<label for="tempo">Quanto Tempo? (meses) </label>
+					<input id="tempo" name="tempo" type="text" placeholder="digite o tempo em meses" class="campo campo-medio">
 				</div>
 
 				<button id="adicionar-juros" class="botao bto-principal">Adicionar</button>
@@ -92,9 +66,10 @@
 
 	</main>
 
-	<!-- <script src="./js/form.js"></script> -->
-	<script src="./js/script.js"></script>
-
+	<script src="./js/form.js"></script>
+	<script src="./js/calculaJurosEMontante.js"></script>
+	<script src="./js/remover.js"></script>
+	
 </body>
 
 </html>

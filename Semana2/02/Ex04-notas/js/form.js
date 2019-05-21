@@ -10,6 +10,7 @@ botaoAdicionar.addEventListener("click", function(event){
 
     //Criar linhas
     var alunoTr = document.createElement("tr");
+    alunoTr.setAttribute("class","aluna");
 
     var nomeTd = document.createElement("td");
     var nota1Td = document.createElement("td");
@@ -32,3 +33,14 @@ botaoAdicionar.addEventListener("click", function(event){
 
 });
 
+//Remover linha com duplo clik e add efeito de desaparecer depois de determinado tempo.Não esquecer de add classe fadeOut no css.
+var tabela = document.querySelector("#tabela-alunos");
+
+tabela.addEventListener("dblclick", function(event) {
+    event.target.parentNode.classList.add("fadeOut");
+
+    setTimeout(function() {
+        event.target.parentNode.remove();
+    }, 500);
+
+});
